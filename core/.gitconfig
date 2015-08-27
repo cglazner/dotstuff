@@ -1,0 +1,8 @@
+[merge]
+	tool = vimdiff
+[user]
+	name = Chris Glazner
+	email = chris@chrisglazner.com
+
+[credential]
+	helper = store

@@ -1,2 +1,2 @@
 # dotstuff
-Basic shell onfiguration files
+Basic shell configuration files
