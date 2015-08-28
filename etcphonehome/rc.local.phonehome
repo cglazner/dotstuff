@@ -1,28 +1,6 @@
-#!/bin/sh -e
-#
-# rc.local
-#
-# This script is executed at the end of each multiuser runlevel.
-# Make sure that the script will "exit 0" on success or any other
-# value on error.
-#
-# In order to enable or disable this script just change the execution
-# bits.
-#
-# By default this script does nothing.
-
-echo 1 >/sys/devices/virtual/misc/watchdog/disable
-
-#/sbin/first-install.sh
-
-bluetooth_rfkill_event >/dev/null 2>&1 &
-rfkill unblock bluetooth
-bluetoothd &
-
 # Start wireless
 ifup wlan0
 # Set retry process to keep reverse tunnel to linode up
 sudo -u cglazner autossh -- -i /home/cglazner/.ssh/id_rsa -o 'ControlPath none' -R chrislinode:2222:localhost:22 cglazner@chrislinode "sh -c \"nohup sleep 30; touch nohup-exit\""
-
 
 exit 0
