@@ -1,6 +1,8 @@
+# Bootup rc.local to tunnel out to VPS
+
 # Start wireless
 ifup wlan0
 # Set retry process to keep reverse tunnel to linode up
-sudo -u cglazner autossh -- -i /home/cglazner/.ssh/id_rsa -o 'ControlPath none' -R chrislinode:2222:localhost:22 cglazner@chrislinode "sh -c \"nohup sleep 30; touch nohup-exit\""
+sudo -u cglazner autossh -- -i /home/cglazner/.ssh/id_rsa -o 'ControlPath none' -R chrislinode:2222:localhost:22 cglazner@chrislinode "sh -c \"nohup cat; touch nohup-exit\""
 
 exit 0
