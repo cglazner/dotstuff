@@ -1,0 +1,25 @@
+"3.4 (created: 2012/04/02 20:07:29)
+
+" Mappings
+" Tab navigation
+" Replace C -> M for OSX Command key
+map <C-j> gT
+map <C-k> gt
+imap <C-j> <Nop>
+imap <C-k> <Nop>
+
+" Example of how to modify a URL; :uw loads the address through the UW library proxy
+" command! uw javascript loadURI(buffer.URL.replace(/([^:\/])(\/)/,"$1.offcampus.lib.washington.edu$2"))
+
+" For lazy typping
+set hintchars="asdfghjklwertyuio"
+
+" So address bar isn't popping in your face
+set ac=false
+
+" ???
+set nextpattern=\bnext\b,^>$,^(>>|»)$,^(›|>|»),(›|>|»)$,\bmore\b
+
+" Junk drawer
+"highlight Hint::after content: attr(hintchar)
+" vim: set ft=vimperator:
