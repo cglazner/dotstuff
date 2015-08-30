@@ -7,10 +7,8 @@ set splitbelow
 set nohlsearch
 set tabstop=4
 set shiftwidth=4
-set foldnestmax=1
 set hidden
 set ignorecase
-set foldlevelstart=1
 set undofile
 set undodir=$HOME/.vimundodir
 set nocompatible
