@@ -1,0 +1,17 @@
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
+#
+bindkey ^j prev
+bindkey ^k next
+bindkey ^t screen
+
+startup_message off
+
+
+vbell off
+
+# emulate .logout message
+pow_detach_msg "Screen session of $LOGNAME $:cr:$:nl:ended."
+
+defscrollback 1000
+
