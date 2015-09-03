@@ -1,0 +1,60 @@
+XTerm*background: \#353535
+XTerm*foreground: white
+xterm*font: -monotype-courier new-medium-r-*-*-16-*-*-*-*-*-*-*
+xterm*geometry: 80x58+0+0
+*color0:  #2E3436
+*color8:  #555753
+! Red
+*color1:  #CC0000
+*color9:  #EF2929
+! Green
+*color2:  #4E9A06
+*color10: #8AE234
+! Yellow
+*color3:  #C4A000
+*color11: #FCE94F
+! Blue
+*color4:  #3465A4
+*color12: #729FCF
+! Purple
+*color5:  #75507B
+*color13: #AD7FA8
+! Cyan
+*color6:  #06989A
+*color14: #34E2E2
+! White
+*color7:  #D3D7CF
+*color15: #EEEEEC
+
+Xft*dpi: 96
+Xft*antialias: true
+Xft*hinting: full
+
+URxvt.font:    xft:Inconsolata:pixelsize=16
+URxvt.background: black
+!URxvt.background: rgb:35/35/35
+!URxvt*foreground: white
+URxvt*foreground: rgb:90/90/90
+
+URxvt.cursorBlink: true
+URxvt.scrollBar: false
+
+XDvi*pixelsPerInch: 600
+XDvi*shrinkFactor: 7
+XDvi.reverseVideo: True
+XDvi*watchFile: 1
+!XDvi*paper: 8.5x11
+XDvi*geometry: +119+7
+XDvi.expert: True
+!XDvi.yOffset: 1cm
+XDvi.highlight: white
+XDvi.hushChecksums: True
+XDvi.postscript: 1
+XDvi.mainTranslations: #override\
+<Key>j: forward-page()\n\
+<Key>k: back-page()\n
+
+urxvt*visualBell:         false
+
+
+
