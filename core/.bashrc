@@ -81,6 +81,7 @@ function fd {
 
 #######################################################333
 # local stuff ~
-if [ -f .bashrc.local ]; then
-    source .bashrc.local
+if [ -f ~/.bashrc.local ]; then
+    source ~/.bashrc.local
 fi
+alias scala='rlwrap scala -Xnojline'
