@@ -1,4 +1,5 @@
 syntax enable
+set autoindent
 set smartindent
 set expandtab
 set nu
